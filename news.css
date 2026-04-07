@@ -1,0 +1,235 @@
+/* ========================================
+   News / Intel Brief Styles
+   ======================================== */
+
+.news-hero {
+    padding: 140px 0 40px;
+    text-align: center;
+}
+
+.news-hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    margin: 16px 0;
+}
+
+.news-hero p {
+    color: var(--text-secondary);
+    font-size: 1.15rem;
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.news-hero strong {
+    color: var(--text-primary);
+}
+
+/* Filter Bar */
+.filter-bar {
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+    position: sticky;
+    top: 72px;
+    z-index: 100;
+    background: rgba(10, 14, 23, 0.92);
+    backdrop-filter: blur(16px);
+}
+
+.filters {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.filters::-webkit-scrollbar { display: none; }
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: var(--font-body);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s;
+}
+
+.filter-btn:hover {
+    border-color: var(--text-muted);
+    color: var(--text-primary);
+}
+
+.filter-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--bg-primary);
+}
+
+/* Week Header */
+.week-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+}
+
+.week-header h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.week-count {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* News Feed */
+.news-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px;
+    transition: border-color 0.2s;
+}
+
+.news-item:hover {
+    border-color: var(--border-light);
+}
+
+.news-tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+}
+
+/* Tag colors by category */
+[data-category="chips"] .news-tag {
+    background: rgba(255, 171, 64, 0.15);
+    color: var(--amber);
+}
+
+[data-category="agents"] .news-tag {
+    background: rgba(0, 229, 255, 0.15);
+    color: var(--accent);
+}
+
+[data-category="models"] .news-tag {
+    background: rgba(156, 39, 176, 0.15);
+    color: #ce93d8;
+}
+
+[data-category="defense"] .news-tag {
+    background: rgba(0, 230, 118, 0.15);
+    color: var(--green);
+}
+
+[data-category="industry"] .news-tag {
+    background: rgba(255, 82, 82, 0.15);
+    color: var(--red);
+}
+
+.news-content h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+.news-source {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+.news-summary {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Our Take — the differentiator */
+.news-take {
+    background: rgba(0, 229, 255, 0.04);
+    border: 1px solid rgba(0, 229, 255, 0.12);
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-top: 16px;
+}
+
+.take-label {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--accent);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.news-take p {
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Week Divider */
+.week-divider {
+    text-align: center;
+    padding: 40px 0;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+/* Subscribe CTA */
+.news-subscribe {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.news-subscribe h2 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+}
+
+.news-subscribe p {
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .news-item {
+        padding: 20px;
+    }
+
+    .news-content h3 {
+        font-size: 1.05rem;
+    }
+
+    .week-header {
+        flex-direction: column;
+        gap: 4px;
+    }
+}

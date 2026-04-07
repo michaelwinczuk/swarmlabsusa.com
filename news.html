@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Intel Brief — Swarm Labs USA</title>
+    <meta name="description" content="Weekly AI intelligence brief: chips, agents, defense tech, and what it means for government. Curated by Swarm Labs USA.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://swarmlabsusa.com/news.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AI Intel Brief — Swarm Labs USA">
+    <meta property="og:description" content="What's happening in AI, filtered through the lens of what matters for government and defense.">
+    <meta property="og:url" content="https://swarmlabsusa.com/news.html">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "AI Intel Brief",
+        "description": "Weekly AI intelligence brief covering chips, agents, defense tech, and government AI — with analysis on what it means for defense modernization.",
+        "publisher": {"@type": "Organization", "name": "Swarm Labs USA"},
+        "url": "https://swarmlabsusa.com/news.html"
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="news.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="3" fill="#00e5ff"/>
+                    <circle cx="16" cy="6" r="2" fill="#00e5ff" opacity="0.8"/>
+                    <circle cx="16" cy="26" r="2" fill="#00e5ff" opacity="0.8"/>
+                    <circle cx="6" cy="11" r="2" fill="#00e5ff" opacity="0.8"/>
+                    <circle cx="26" cy="11" r="2" fill="#00e5ff" opacity="0.8"/>
+                    <circle cx="6" cy="21" r="2" fill="#00e5ff" opacity="0.8"/>
+                    <circle cx="26" cy="21" r="2" fill="#00e5ff" opacity="0.8"/>
+                    <line x1="16" y1="13" x2="16" y2="8" stroke="#00e5ff" stroke-width="0.8" opacity="0.5"/>
+                    <line x1="16" y1="19" x2="16" y2="24" stroke="#00e5ff" stroke-width="0.8" opacity="0.5"/>
+                    <line x1="13.5" y1="14.5" x2="7.5" y2="12" stroke="#00e5ff" stroke-width="0.8" opacity="0.5"/>
+                    <line x1="18.5" y1="14.5" x2="24.5" y2="12" stroke="#00e5ff" stroke-width="0.8" opacity="0.5"/>
+                    <line x1="13.5" y1="17.5" x2="7.5" y2="20" stroke="#00e5ff" stroke-width="0.8" opacity="0.5"/>
+                    <line x1="18.5" y1="17.5" x2="24.5" y2="20" stroke="#00e5ff" stroke-width="0.8" opacity="0.5"/>
+                </svg>
+                <span>SWARM LABS USA</span>
+            </a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/news.html">Intel Brief</a>
+                <a href="/#contact" class="nav-cta">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="news-hero">
+        <div class="container">
+            <span class="section-tag">INTELLIGENCE BRIEF</span>
+            <h1>AI Intel Brief</h1>
+            <p>What's happening in AI, filtered through one lens: <strong>what does this mean for government and defense?</strong></p>
+        </div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <section class="filter-bar">
+        <div class="container">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="chips">Chips & Hardware</button>
+                <button class="filter-btn" data-filter="agents">Agents & Swarms</button>
+                <button class="filter-btn" data-filter="models">Models & Training</button>
+                <button class="filter-btn" data-filter="defense">Defense & Gov</button>
+                <button class="filter-btn" data-filter="industry">Industry</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+
+            <!-- Week Header -->
+            <div class="week-header">
+                <h2>Week of April 7, 2026</h2>
+                <span class="week-count">8 items</span>
+            </div>
+
+            <div class="news-feed" id="newsFeed">
+
+                <article class="news-item" data-category="models">
+                    <div class="news-tag">MODELS</div>
+                    <div class="news-content">
+                        <h3>Anthropic Ships Claude Opus 4.6 with 1M Context Window</h3>
+                        <p class="news-source">Anthropic Blog &middot; Apr 5, 2026</p>
+                        <p class="news-summary">Anthropic's latest model doubles the context window to 1M tokens while improving code generation and multi-step reasoning. Available via API and Claude Code CLI.</p>
+                        <div class="news-take">
+                            <span class="take-label">OUR TAKE</span>
+                            <p>The 1M context window is a game-changer for document-heavy government workflows. An entire OPORD, all annexes, and supporting intelligence products fit in a single context. But it's still a cloud API — the real win is when these capabilities run on local hardware. We're watching the open-source models close the gap.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-item" data-category="chips">
+                    <div class="news-tag">CHIPS</div>
+                    <div class="news-content">
+                        <h3>NVIDIA Blackwell B300 Enters Mass Production</h3>
+                        <p class="news-source">Reuters &middot; Apr 4, 2026</p>
+                        <p class="news-summary">NVIDIA's next-generation Blackwell B300 GPU begins mass production at TSMC. The chip delivers 2.5x the inference performance of the H100 at the same power envelope.</p>
+                        <div class="news-take">
+                            <span class="take-label">OUR TAKE</span>
+                            <p>The trickle-down matters more than the flagship. When data center chips get 2.5x faster, last year's consumer cards (RTX 5070, 5080) become the new floor for edge AI. We're already training and running 3B parameter models on an RTX 5070 laptop. Two generations from now, 7B models will run on hardware that fits in a cargo pocket. That's the trend line for deployable defense AI.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-item" data-category="agents">
+                    <div class="news-tag">AGENTS</div>
+                    <div class="news-content">
+                        <h3>Microsoft Announces Multi-Agent Orchestration in Azure AI</h3>
+                        <p class="news-source">Microsoft Azure Blog &middot; Apr 3, 2026</p>
+                        <p class="news-summary">Azure AI now supports multi-agent workflows where specialized AI agents collaborate on complex tasks, with built-in orchestration, memory sharing, and human-in-the-loop checkpoints.</p>
+                        <div class="news-take">
+                            <span class="take-label">OUR TAKE</span>
+                            <p>Multi-agent is going mainstream. The big players are validating what we've been building: specialized agents that each do one thing well, chained together for complex analysis. The difference is we don't need Azure. Our agents run on a laptop, offline, with zero cloud dependency. When the market catches up to multi-agent, we'll already be deployed where the cloud can't reach.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-item" data-category="defense">
+                    <div class="news-tag">DEFENSE</div>
+                    <div class="news-content">
+                        <h3>DIU Releases New AI & Autonomy Solicitation — Rolling Submissions</h3>
+                        <p class="news-source">Defense Innovation Unit &middot; Apr 2, 2026</p>
+                        <p class="news-summary">The Defense Innovation Unit opened a new rolling solicitation for AI and autonomy capabilities, with awards ranging from $500K to $20M. Focus areas include autonomous decision support, edge deployment, and contested logistics.</p>
+                        <div class="news-take">
+                            <span class="take-label">OUR TAKE</span>
+                            <p>Three of our core capabilities are in their focus areas: autonomous decision support (our military swarms), edge deployment (our entire architecture), and contested logistics (our data integrity system). This is the kind of solicitation where being able to demo on a laptop — not a slide deck — is the differentiator. Working system beats PowerPoint.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-item" data-category="models">
+                    <div class="news-tag">MODELS</div>
+                    <div class="news-content">
+                        <h3>QLoRA Fine-Tuning Now Possible on Consumer GPUs Under 8GB VRAM</h3>
+                        <p class="news-source">Hugging Face Blog &middot; Apr 1, 2026</p>
+                        <p class="news-summary">New optimizations in the PEFT and TRL libraries enable QLoRA fine-tuning of 3B+ parameter models on GPUs with as little as 6GB VRAM, making domain-specific model customization accessible without data center hardware.</p>
+                        <div class="news-take">
+                            <span class="take-label">OUR TAKE</span>
+                            <p>We did exactly this today. Fine-tuned a 3B model on military intelligence doctrine using QLoRA on a laptop RTX 5070. 37 training examples, 16 minutes, and the model went from generic AI responses to producing doctrinal SALUTE evaluations and threat assessments that use proper military terminology. The barrier to domain-specific AI just dropped to zero. Any organization with a laptop and subject matter expertise can build their own specialized model.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-item" data-category="defense">
+                    <div class="news-tag">DEFENSE</div>
+                    <div class="news-content">
+                        <h3>DoD CIO Updates AI Adoption Guidelines — Emphasizes Explainability</h3>
+                        <p class="news-source">FedScoop &middot; Mar 31, 2026</p>
+                        <p class="news-summary">The Department of Defense CIO released updated guidelines for AI adoption across the enterprise, with strengthened requirements for explainability, audit trails, and human oversight in automated decision support systems.</p>
+                        <div class="news-take">
+                            <span class="take-label">OUR TAKE</span>
+                            <p>This is validation of our core design philosophy. "The AI said so" has never been an acceptable answer in defense. Our graph-based reasoning is inherently explainable — every conclusion traces to specific nodes and edges in a knowledge graph. Every path is auditable. Every result is reproducible. The new guidelines don't require us to change anything. They require everyone else to catch up.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-item" data-category="industry">
+                    <div class="news-tag">INDUSTRY</div>
+                    <div class="news-content">
+                        <h3>OpenAI Revenue Hits $10B Annual Run Rate — Enterprise Adoption Accelerates</h3>
+                        <p class="news-source">The Information &middot; Mar 30, 2026</p>
+                        <p class="news-summary">OpenAI's annual revenue run rate has crossed $10 billion, driven primarily by enterprise API usage and ChatGPT Team subscriptions. The company now serves over 600,000 business customers.</p>
+                        <div class="news-take">
+                            <span class="take-label">OUR TAKE</span>
+                            <p>$10B in revenue means $10B flowing to cloud APIs. Every dollar of that is a recurring cost that scales with usage. Our approach is the opposite: knowledge graphs and local models that cost $0 per query after initial deployment. At government scale — millions of queries across thousands of users — the cost difference between per-query API pricing and a local system is the difference between a sustainable program and one that gets defunded in year two.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-item" data-category="chips">
+                    <div class="news-tag">CHIPS</div>
+                    <div class="news-content">
+                        <h3>Qualcomm Demos On-Device 7B Model Running at 30 Tokens/Second on Snapdragon X Elite</h3>
+                        <p class="news-source">Qualcomm Blog &middot; Mar 28, 2026</p>
+                        <p class="news-summary">Qualcomm demonstrated a 7-billion parameter language model running entirely on-device on the Snapdragon X Elite processor at 30 tokens per second — no cloud, no GPU, just the laptop's NPU.</p>
+                        <div class="news-take">
+                            <span class="take-label">OUR TAKE</span>
+                            <p>This is the future of deployable AI. When a 7B model runs at conversational speed on a standard laptop without a discrete GPU, the hardware barrier for defense AI deployment disappears entirely. Our current system runs a 3B model on a laptop GPU. In 12-18 months, we'll run a 7B model on the CPU alone. Every military laptop becomes an AI-capable platform. No procurement action needed.</p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Previous Weeks (collapsed) -->
+            <div class="week-divider">
+                <span>Previous weeks coming soon</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section section-dark">
+        <div class="container">
+            <div class="news-subscribe">
+                <h2>Want this in your inbox?</h2>
+                <p>We're working on a weekly email version of the Intel Brief. Drop us a line if you'd like to be on the early list.</p>
+                <a href="/#contact" class="btn btn-primary">Get on the List</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">SWARM LABS USA</span>
+                    <p>Autonomous Systems That Deliver Results.</p>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2026 Swarm Labs USA. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // Filter functionality
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const filter = btn.dataset.filter;
+            document.querySelectorAll('.news-item').forEach(item => {
+                if (filter === 'all' || item.dataset.category === filter) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</html>
