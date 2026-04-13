@@ -302,6 +302,52 @@
     margin-bottom: 20px;
 }
 
+/* ========================================
+   Branded SVG hero + dividers
+   (Self-hosted, no external images)
+   ======================================== */
+
+.svg-hero {
+    max-width: 900px;
+    height: 360px;
+    margin: 40px auto;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background:
+        radial-gradient(ellipse at center, rgba(0, 229, 255, 0.18) 0%, rgba(0, 229, 255, 0.04) 45%, transparent 75%),
+        linear-gradient(135deg, #0a1220 0%, #0d1828 50%, #0a1220 100%);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg-hero svg {
+    width: 100%;
+    height: 100%;
+}
+
+.svg-divider {
+    max-width: 700px;
+    height: 140px;
+    margin: 40px auto;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background:
+        radial-gradient(ellipse at center, rgba(0, 229, 255, 0.12) 0%, transparent 70%),
+        linear-gradient(135deg, #0a1220 0%, #0d1828 50%, #0a1220 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.svg-divider svg {
+    width: 100%;
+    height: 100%;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .blog-grid {
@@ -309,5 +355,11 @@
     }
     .article-body {
         padding: 0 16px 60px;
+    }
+    .svg-hero {
+        height: 220px;
+    }
+    .svg-divider {
+        height: 100px;
     }
 }

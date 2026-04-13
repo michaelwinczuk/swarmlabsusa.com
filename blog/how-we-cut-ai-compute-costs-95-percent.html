@@ -81,9 +81,42 @@
         </div>
     </header>
 
-    <figure class="article-hero-image">
-        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=500&fit=crop" alt="Circuit board with glowing traces, representing efficient local compute">
-    </figure>
+    <div class="svg-hero" role="img" aria-label="Abstract swarm network: a central hub connected to many specialized nodes">
+        <svg viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <radialGradient id="heroGlow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.35"/>
+                    <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+                </radialGradient>
+            </defs>
+            <circle cx="450" cy="180" r="160" fill="url(#heroGlow)"/>
+            <g stroke="#00e5ff" stroke-width="1" opacity="0.35">
+                <line x1="450" y1="180" x2="150" y2="90"/>
+                <line x1="450" y1="180" x2="150" y2="270"/>
+                <line x1="450" y1="180" x2="750" y2="90"/>
+                <line x1="450" y1="180" x2="750" y2="270"/>
+                <line x1="450" y1="180" x2="450" y2="40"/>
+                <line x1="450" y1="180" x2="450" y2="320"/>
+                <line x1="450" y1="180" x2="260" y2="180"/>
+                <line x1="450" y1="180" x2="640" y2="180"/>
+                <line x1="150" y1="90" x2="260" y2="180"/>
+                <line x1="750" y1="90" x2="640" y2="180"/>
+                <line x1="150" y1="270" x2="260" y2="180"/>
+                <line x1="750" y1="270" x2="640" y2="180"/>
+            </g>
+            <circle cx="450" cy="180" r="8" fill="#00e5ff"/>
+            <g fill="#00e5ff">
+                <circle cx="150" cy="90" r="4" opacity="0.9"/>
+                <circle cx="150" cy="270" r="4" opacity="0.9"/>
+                <circle cx="750" cy="90" r="4" opacity="0.9"/>
+                <circle cx="750" cy="270" r="4" opacity="0.9"/>
+                <circle cx="450" cy="40" r="4" opacity="0.9"/>
+                <circle cx="450" cy="320" r="4" opacity="0.9"/>
+                <circle cx="260" cy="180" r="5" opacity="0.95"/>
+                <circle cx="640" cy="180" r="5" opacity="0.95"/>
+            </g>
+        </svg>
+    </div>
 
     <article class="article-body">
 
@@ -101,10 +134,30 @@
 
         <p>&quot;What does this term mean?&quot; &quot;What category does this fall into?&quot; &quot;Is this related to that?&quot; &quot;What comes next in this sequence?&quot; These are not reasoning questions. They are dictionary questions dressed up in a language model wrapper. And we were paying full API rates for every single one.</p>
 
-        <figure class="article-image">
-            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=400&fit=crop" alt="Abstract data visualization showing network nodes and edges">
-            <figcaption>Most &quot;AI reasoning&quot; is really structured lookup. Graphs handle it in milliseconds for zero cost.</figcaption>
-        </figure>
+        <div class="svg-divider" role="img" aria-label="Graph traversal visual: edges connecting nodes">
+            <svg viewBox="0 0 700 140" xmlns="http://www.w3.org/2000/svg">
+                <g stroke="#00e5ff" stroke-width="1" opacity="0.4">
+                    <line x1="100" y1="70" x2="220" y2="35"/>
+                    <line x1="100" y1="70" x2="220" y2="105"/>
+                    <line x1="220" y1="35" x2="340" y2="70"/>
+                    <line x1="220" y1="105" x2="340" y2="70"/>
+                    <line x1="340" y1="70" x2="460" y2="35"/>
+                    <line x1="340" y1="70" x2="460" y2="105"/>
+                    <line x1="460" y1="35" x2="580" y2="70"/>
+                    <line x1="460" y1="105" x2="580" y2="70"/>
+                </g>
+                <g fill="#00e5ff">
+                    <circle cx="100" cy="70" r="5"/>
+                    <circle cx="220" cy="35" r="4" opacity="0.85"/>
+                    <circle cx="220" cy="105" r="4" opacity="0.85"/>
+                    <circle cx="340" cy="70" r="5"/>
+                    <circle cx="460" cy="35" r="4" opacity="0.85"/>
+                    <circle cx="460" cy="105" r="4" opacity="0.85"/>
+                    <circle cx="580" cy="70" r="5"/>
+                </g>
+            </svg>
+        </div>
+        <p class="svg-caption" style="text-align:center; color:var(--text-secondary); font-size:0.85rem; margin-top:-24px; margin-bottom:32px;">Most &quot;AI reasoning&quot; is really structured lookup. Graphs handle it in milliseconds for zero cost.</p>
 
         <p>The first architectural move was to stop paying for lookup. We built a knowledge graph layer — actually, we built a library of them, one per domain — and pushed every retrieval-style question down into graph traversal. When the pipeline needs to know that reentrancy is a subtype of smart-contract vulnerability, or that a particular failure mode causes another, it does not ask an LLM. It walks edges in a local file.</p>
 
@@ -130,10 +183,41 @@
 
         <p>Most of the time, when a cloud language model gives a wrong answer, you never find out. The answer looks plausible, it sounds confident, and there is no way to audit how it got there. You get a black box that occasionally produces bad outputs, and the failure mode is silent.</p>
 
-        <figure class="article-image">
-            <img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=800&h=400&fit=crop" alt="Hand tracing a path across a network diagram on paper">
-            <figcaption>Deterministic traversal is fully auditable. Every conclusion traces back to specific edges in a specific graph.</figcaption>
-        </figure>
+        <div class="svg-divider" role="img" aria-label="Audit trail visual: a highlighted traversal path through a network">
+            <svg viewBox="0 0 700 140" xmlns="http://www.w3.org/2000/svg">
+                <g stroke="#1a2a3a" stroke-width="1" fill="none">
+                    <line x1="80" y1="70" x2="180" y2="40"/>
+                    <line x1="80" y1="70" x2="180" y2="100"/>
+                    <line x1="180" y1="40" x2="290" y2="70"/>
+                    <line x1="180" y1="100" x2="290" y2="70"/>
+                    <line x1="290" y1="70" x2="400" y2="40"/>
+                    <line x1="290" y1="70" x2="400" y2="100"/>
+                    <line x1="400" y1="40" x2="510" y2="70"/>
+                    <line x1="400" y1="100" x2="510" y2="70"/>
+                    <line x1="510" y1="70" x2="620" y2="70"/>
+                </g>
+                <g stroke="#00e5ff" stroke-width="2.5" fill="none">
+                    <line x1="80" y1="70" x2="180" y2="40"/>
+                    <line x1="180" y1="40" x2="290" y2="70"/>
+                    <line x1="290" y1="70" x2="400" y2="100"/>
+                    <line x1="400" y1="100" x2="510" y2="70"/>
+                    <line x1="510" y1="70" x2="620" y2="70"/>
+                </g>
+                <g fill="#00e5ff">
+                    <circle cx="80" cy="70" r="5"/>
+                    <circle cx="180" cy="40" r="5"/>
+                    <circle cx="290" cy="70" r="5"/>
+                    <circle cx="400" cy="100" r="5"/>
+                    <circle cx="510" cy="70" r="5"/>
+                    <circle cx="620" cy="70" r="5"/>
+                </g>
+                <g fill="#1a3040">
+                    <circle cx="180" cy="100" r="4"/>
+                    <circle cx="400" cy="40" r="4"/>
+                </g>
+            </svg>
+        </div>
+        <p class="svg-caption" style="text-align:center; color:var(--text-secondary); font-size:0.85rem; margin-top:-24px; margin-bottom:32px;">Deterministic traversal is fully auditable. Every conclusion traces back to specific edges in a specific graph.</p>
 
         <p>Graph traversal is the opposite. When one of our structural agents returns a finding, we can show exactly which nodes it visited, in what order, under which rules. The audit trail is not a separate logging system. The audit trail <em>is</em> the computation. If the finding is wrong, you can look at the edges it walked and see exactly where the error was — either the graph had a bad edge, or the rule was wrong, or the question was framed incorrectly. It is a fixable kind of wrong.</p>
 
@@ -158,10 +242,28 @@
 
         <p>Our answer is a routing layer that knows the difference. Every incoming task is classified against a similarity threshold: does the knowledge graph have coverage, or does it not? When the graph has coverage, we use the fast path. When it does not, the router falls through to the guided reasoning layer, and on genuinely hard questions it falls through again to a more expensive deliberation process. The pipeline never gets stuck; it just gets more expensive as the problem gets harder.</p>
 
-        <figure class="article-image">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop" alt="Dashboard showing real-time analytics and routing decisions">
-            <figcaption>Dynamic routing means the fast path handles 80 percent of traffic for pennies; the expensive path handles the 20 percent that actually needs it.</figcaption>
-        </figure>
+        <div class="svg-divider" role="img" aria-label="Routing visual: one dominant fast path with a smaller expensive branch">
+            <svg viewBox="0 0 700 140" xmlns="http://www.w3.org/2000/svg">
+                <g stroke="#00e5ff" stroke-width="3" opacity="0.9" fill="none">
+                    <path d="M 80 70 L 260 70 L 420 70 L 620 70"/>
+                </g>
+                <g stroke="#00e5ff" stroke-width="1" opacity="0.35" fill="none">
+                    <path d="M 260 70 L 340 30 L 420 70"/>
+                </g>
+                <g fill="#00e5ff">
+                    <circle cx="80" cy="70" r="5"/>
+                    <circle cx="260" cy="70" r="5"/>
+                    <circle cx="420" cy="70" r="5"/>
+                    <circle cx="620" cy="70" r="5"/>
+                </g>
+                <g fill="#00e5ff" opacity="0.5">
+                    <circle cx="340" cy="30" r="4"/>
+                </g>
+                <text x="350" y="115" fill="#00e5ff" opacity="0.8" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle">fast path: 80% of traffic</text>
+                <text x="340" y="18" fill="#00e5ff" opacity="0.5" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">escalation: 20%</text>
+            </svg>
+        </div>
+        <p class="svg-caption" style="text-align:center; color:var(--text-secondary); font-size:0.85rem; margin-top:-24px; margin-bottom:32px;">Dynamic routing means the fast path handles 80 percent of traffic for pennies; the expensive path handles the 20 percent that actually needs it.</p>
 
         <p>The cost structure reflects that. Easy questions cost nothing. Medium questions cost fractions of a cent. Hard questions that escalate to deliberation cost somewhere between fifty cents and a dollar fifty. Across a realistic mixture of incoming work, the weighted average comes in under a dollar per complex analysis — and the median is effectively zero because most questions never leave the graph layer.</p>
 
