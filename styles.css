@@ -1125,3 +1125,43 @@ a:hover {
         grid-template-columns: 1fr;
     }
 }
+
+/* ========================================
+   Pillar grid (5 principles — horizontal strip)
+   ======================================== */
+
+.pillar-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.pillar-grid .outcome-card {
+    padding: 24px;
+}
+
+.pillar-grid .outcome-card h3 {
+    font-size: 17px;
+}
+
+.pillar-grid .outcome-card p {
+    font-size: 13px;
+}
+
+@media (max-width: 1100px) {
+    .pillar-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .pillar-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .pillar-grid {
+        grid-template-columns: 1fr;
+    }
+}
