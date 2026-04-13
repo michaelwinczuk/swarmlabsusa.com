@@ -1127,6 +1127,20 @@ a:hover {
 }
 
 /* ========================================
+   Anchor override for clickable solution cards
+   ======================================== */
+
+a.solution-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+a.solution-card:hover {
+    text-decoration: none;
+}
+
+/* ========================================
    Pillar grid (5 principles — horizontal strip)
    ======================================== */
 

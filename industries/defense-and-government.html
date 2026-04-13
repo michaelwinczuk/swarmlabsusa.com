@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defense &amp; Government — Swarm Labs USA</title>
+    <meta name="description" content="Air-gapped autonomous AI for defense and government environments. Runs on standard laptops, fine-tuned on your doctrine, full audit trails, zero cloud dependency. SBIR/STTR aligned.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://swarmlabsusa.com/industries/defense-and-government.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Defense &amp; Government — Swarm Labs USA">
+    <meta property="og:description" content="Air-gapped AI swarms for defense and government. Runs offline on standard laptops. Fine-tuned on your doctrine. Full audit trails.">
+    <meta property="og:url" content="https://swarmlabsusa.com/industries/defense-and-government.html">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1580982327559-c1202864eb05?w=1200&h=630&fit=crop">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../blog.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="3" fill="#00e5ff"/>
+                    <circle cx="16" cy="6" r="2" fill="#00e5ff" opacity="0.8"/>
+                    <circle cx="16" cy="26" r="2" fill="#00e5ff" opacity="0.8"/>
+                    <circle cx="6" cy="11" r="2" fill="#00e5ff" opacity="0.8"/>
+                    <circle cx="26" cy="11" r="2" fill="#00e5ff" opacity="0.8"/>
+                    <circle cx="6" cy="21" r="2" fill="#00e5ff" opacity="0.8"/>
+                    <circle cx="26" cy="21" r="2" fill="#00e5ff" opacity="0.8"/>
+                    <line x1="16" y1="13" x2="16" y2="8" stroke="#00e5ff" stroke-width="0.8" opacity="0.5"/>
+                    <line x1="16" y1="19" x2="16" y2="24" stroke="#00e5ff" stroke-width="0.8" opacity="0.5"/>
+                    <line x1="13.5" y1="14.5" x2="7.5" y2="12" stroke="#00e5ff" stroke-width="0.8" opacity="0.5"/>
+                    <line x1="18.5" y1="14.5" x2="24.5" y2="12" stroke="#00e5ff" stroke-width="0.8" opacity="0.5"/>
+                    <line x1="13.5" y1="17.5" x2="7.5" y2="20" stroke="#00e5ff" stroke-width="0.8" opacity="0.5"/>
+                    <line x1="18.5" y1="17.5" x2="24.5" y2="20" stroke="#00e5ff" stroke-width="0.8" opacity="0.5"/>
+                </svg>
+                <span>SWARM LABS USA</span>
+            </a>
+            <div class="nav-links">
+                <a href="/#pillars">Principles</a>
+                <a href="/#industries">Industries</a>
+                <a href="/#solutions">Capabilities</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/news.html">Intel Brief</a>
+                <a href="/#contact" class="nav-cta">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <a href="/#industries" class="article-back">&larr; All Industries</a>
+    </div>
+
+    <header class="article-header">
+        <span class="section-tag">DEFENSE &amp; GOVERNMENT</span>
+        <h1>Air-Gapped AI for Mission Environments</h1>
+        <div class="article-meta">
+            <span>Industry Focus</span>
+        </div>
+    </header>
+
+    <figure class="article-hero-image">
+        <img src="https://images.unsplash.com/photo-1580982327559-c1202864eb05?w=1200&h=500&fit=crop" alt="Operator silhouettes with digital overlay representing mission AI">
+    </figure>
+
+    <article class="article-body">
+
+        <p>Most AI vendors have never deployed into an environment where the cloud is not an option. We built for that environment first. Everything else — the cost savings, the explainability, the audit trails — fell out of that single design constraint.</p>
+
+        <h2>The Problem Every Defense Program Hits</h2>
+
+        <p>A cloud-first AI stack cannot be deployed to a SCIF, to a ship, to a tactical operations center in a denied environment, or onto any classified network where the word &quot;cloud&quot; is aspirational. The authorization path alone — Authority to Operate, IL5 or IL6 cloud authorization, FedRAMP, DISA review — is measured in months before the first query runs. For classified networks, multiply that by three. And even after all of it, you still have a hard dependency: if the network goes down, the AI goes down with it.</p>
+
+        <p>For a commercial application, that is an inconvenience. For a commander making decisions under fire, it is disqualifying.</p>
+
+        <h2>How We Approach Defense AI</h2>
+
+        <p>We started from the opposite assumption: <strong>what if there is no network at all?</strong> That single question reshaped the entire architecture. The knowledge has to live locally. The reasoning has to be deterministic. The footprint has to be tiny enough to run on the laptop a Marine carries in a backpack.</p>
+
+        <p>The resulting system is a layered stack: a curated knowledge graph that answers the structural questions, a library of deterministic reasoning primitives that compose into multi-step analyses, and a small local language model that handles the judgment-heavy tasks a graph traversal cannot. Everything runs on standard Windows or Linux hardware. No GPU cluster, no cloud connection, no external dependencies.</p>
+
+        <h2>Capabilities</h2>
+
+        <p>This is what we currently deliver for defense and government customers:</p>
+
+        <ul>
+            <li><strong>Domain-specialized model training on a laptop.</strong> We fine-tune open-source language models on your doctrine, policy, or SOP corpus using QLoRA. A full training run takes about sixteen minutes on an RTX 5070-class GPU. The output is a model that uses your vocabulary and produces outputs in your standard formats — SALUTE, METT-TC, DRAW-D, PACE, whatever applies.</li>
+            <li><strong>Air-gapped intelligence analysis.</strong> Multi-agent swarms that produce threat assessments, course-of-action analyses, and intelligence products offline, with full reasoning traces on every finding.</li>
+            <li><strong>Data assurance for disconnected systems.</strong> Cross-system discrepancy detection across personnel, finance, procurement, and contract databases — the kind of findings that cost programs real money when caught late in an audit cycle.</li>
+            <li><strong>Cyber defense and novel attack pattern recognition.</strong> Autonomous correlation across threat feeds, signature engines, and behavioral telemetry, with adversarial simulation and red-team probes.</li>
+        </ul>
+
+        <h2>Why It Works for Government</h2>
+
+        <p>The authorization story changes completely when the system has nothing to authorize. No cloud infrastructure means no cloud ATO. No data leaving the machine means no data-in-transit review. No external connections means no network security evaluation. No API keys, no subscriptions, no per-query cost curve that explodes at scale.</p>
+
+        <p>The system runs on hardware you already own, within the security boundary you already have, on models trained on unclassified doctrine. Operational data never touches anything outside the box it was already on.</p>
+
+        <div class="callout">
+            <p><strong>Total deployment footprint:</strong> One compiled binary (~8 MB), one local model file (~2 GB), and the knowledge graph files (~60 MB). Under 3 GB total. Copy it to a USB drive, plug it into any Windows or Linux machine, and it runs.</p>
+        </div>
+
+        <h2>SBIR, STTR, and Prime Subcontracting</h2>
+
+        <p>Our technology aligns with DoD modernization priorities in autonomous systems, cyber operations, and data analytics. We are actively pursuing SBIR and STTR opportunities and are available as a subcontractor to primes evaluating innovative autonomous AI capabilities. Primary NAICS code 541715, with 541511 and 541512 as secondary.</p>
+
+        <p>If you are a program manager, contracting officer, or prime evaluating an autonomous AI capability for a specific mission, the best way to understand what we do is to walk through it on your actual problem. Drop us a note — we are happy to show, not just tell.</p>
+
+        <div class="article-cta">
+            <h3>Evaluating AI for a government program?</h3>
+            <p>We walk program managers, contracting officers, and technical evaluators through the architecture on real mission problems.</p>
+            <a href="/#contact" class="btn btn-primary">Start a Conversation</a>
+        </div>
+
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">SWARM LABS USA</span>
+                    <p>Autonomous Systems That Pass an Audit.</p>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2026 Swarm Labs USA. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
