@@ -12,7 +12,7 @@
     <meta property="og:title" content="Financial Services — Swarm Labs USA">
     <meta property="og:description" content="AI swarms for continuous monitoring, counterparty risk, and cross-source correlation. Audit-grade evidence on every alert.">
     <meta property="og:url" content="https://swarmlabsusa.com/industries/financial-services.html">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=1200&h=630&fit=crop">
+    <meta property="og:image" content="https://swarmlabsusa.com/og/default.svg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,9 +65,54 @@
         </div>
     </header>
 
-    <figure class="article-hero-image">
-        <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=1200&h=500&fit=crop" alt="Financial data visualization on trading screens">
-    </figure>
+    <div class="svg-hero" role="img" aria-label="Multiple correlated time series feeding into a correlation hub">
+        <svg viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <radialGradient id="fg" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.3"/>
+                    <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+                </radialGradient>
+            </defs>
+            <circle cx="700" cy="180" r="160" fill="url(#fg)"/>
+            <g stroke="#00e5ff" stroke-width="2" opacity="0.7" fill="none">
+                <path d="M 60 100 Q 130 90, 200 80 T 340 60"/>
+            </g>
+            <g stroke="#00e5ff" stroke-width="2" opacity="0.55" fill="none">
+                <path d="M 60 180 Q 130 200, 200 175 T 340 150"/>
+            </g>
+            <g stroke="#00e5ff" stroke-width="2" opacity="0.7" fill="none">
+                <path d="M 60 260 Q 130 240, 200 270 T 340 240"/>
+            </g>
+            <g stroke="#00e5ff" stroke-width="1" opacity="0.4" fill="none">
+                <line x1="340" y1="60" x2="700" y2="180"/>
+                <line x1="340" y1="150" x2="700" y2="180"/>
+                <line x1="340" y1="240" x2="700" y2="180"/>
+            </g>
+            <g fill="#00e5ff">
+                <circle cx="60" cy="100" r="4"/>
+                <circle cx="200" cy="80" r="3"/>
+                <circle cx="340" cy="60" r="5"/>
+                <circle cx="60" cy="180" r="4"/>
+                <circle cx="200" cy="175" r="3"/>
+                <circle cx="340" cy="150" r="5"/>
+                <circle cx="60" cy="260" r="4"/>
+                <circle cx="200" cy="270" r="3"/>
+                <circle cx="340" cy="240" r="5"/>
+                <circle cx="700" cy="180" r="12"/>
+            </g>
+            <g stroke="#00e5ff" stroke-width="1" opacity="0.35" fill="none">
+                <line x1="700" y1="180" x2="800" y2="120"/>
+                <line x1="700" y1="180" x2="820" y2="180"/>
+                <line x1="700" y1="180" x2="800" y2="240"/>
+            </g>
+            <g fill="#00e5ff">
+                <circle cx="800" cy="120" r="4"/>
+                <circle cx="820" cy="180" r="4"/>
+                <circle cx="800" cy="240" r="4"/>
+            </g>
+            <text x="450" y="345" fill="#00e5ff" opacity="0.6" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="middle">cross-source correlation with a full evidence trail</text>
+        </svg>
+    </div>
 
     <article class="article-body">
 

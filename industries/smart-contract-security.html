@@ -12,7 +12,7 @@
     <meta property="og:title" content="Smart Contract Security — Swarm Labs USA">
     <meta property="og:description" content="Deterministic audit swarms for Solidity contracts. Reentrancy, access control, arithmetic safety. Reproducible findings, grounded RAG, auditable trails.">
     <meta property="og:url" content="https://swarmlabsusa.com/industries/smart-contract-security.html">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1639322537228-f710d846310a?w=1200&h=630&fit=crop">
+    <meta property="og:image" content="https://swarmlabsusa.com/og/default.svg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,9 +65,41 @@
         </div>
     </header>
 
-    <figure class="article-hero-image">
-        <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?w=1200&h=500&fit=crop" alt="Abstract blockchain and code visualization">
-    </figure>
+    <div class="svg-hero" role="img" aria-label="Hexagonal chain of blocks with audit markers">
+        <svg viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <radialGradient id="sg" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.3"/>
+                    <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+                </radialGradient>
+            </defs>
+            <circle cx="450" cy="180" r="180" fill="url(#sg)"/>
+            <g stroke="#00e5ff" stroke-width="1.5" opacity="0.5" fill="none">
+                <polygon points="170,180 210,130 290,130 330,180 290,230 210,230"/>
+                <polygon points="330,180 370,130 450,130 490,180 450,230 370,230"/>
+                <polygon points="490,180 530,130 610,130 650,180 610,230 530,230"/>
+                <polygon points="650,180 690,130 770,130 810,180 770,230 690,230"/>
+            </g>
+            <g stroke="#00e5ff" stroke-width="2" opacity="0.9" fill="none">
+                <line x1="330" y1="180" x2="370" y2="180"/>
+                <line x1="490" y1="180" x2="530" y2="180"/>
+                <line x1="650" y1="180" x2="690" y2="180"/>
+            </g>
+            <g fill="#00e5ff">
+                <circle cx="250" cy="180" r="6"/>
+                <circle cx="410" cy="180" r="6"/>
+                <circle cx="570" cy="180" r="6"/>
+                <circle cx="730" cy="180" r="6"/>
+            </g>
+            <g stroke="#00e5ff" stroke-width="2" fill="none">
+                <polyline points="238,180 248,190 262,170"/>
+                <polyline points="398,180 408,190 422,170"/>
+                <polyline points="558,180 568,190 582,170"/>
+                <polyline points="718,180 728,190 742,170"/>
+            </g>
+            <text x="450" y="330" fill="#00e5ff" opacity="0.6" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="middle">reproducible findings, auditable path</text>
+        </svg>
+    </div>
 
     <article class="article-body">
 

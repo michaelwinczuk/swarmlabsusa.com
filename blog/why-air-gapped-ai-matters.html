@@ -12,7 +12,7 @@
     <meta property="og:title" content="Why Air-Gapped AI Changes Everything for Defense">
     <meta property="og:description" content="Most AI vendors assume internet access. We built for environments where there is none. Here's the architecture difference.">
     <meta property="og:url" content="https://swarmlabsusa.com/blog/why-air-gapped-ai-matters.html">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=630&fit=crop">
+    <meta property="og:image" content="https://swarmlabsusa.com/og/air-gapped.svg">
     <meta property="article:published_time" content="2026-04-07">
     <meta property="article:author" content="Swarm Labs USA">
 
@@ -26,7 +26,7 @@
         "author": {"@type": "Organization", "name": "Swarm Labs USA"},
         "publisher": {"@type": "Organization", "name": "Swarm Labs USA"},
         "url": "https://swarmlabsusa.com/blog/why-air-gapped-ai-matters.html",
-        "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=630&fit=crop",
+        "image": "https://swarmlabsusa.com/og/air-gapped.svg",
         "keywords": ["air-gapped AI", "defense AI", "edge deployment", "SIPR", "DoD AI"]
     }
     </script>
@@ -81,9 +81,46 @@
         </div>
     </header>
 
-    <figure class="article-hero-image">
-        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=500&fit=crop" alt="Server infrastructure with blue ambient lighting">
-    </figure>
+    <div class="svg-hero" role="img" aria-label="Air-gapped cluster: an isolated group of nodes inside a dashed boundary">
+        <svg viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <radialGradient id="aghg" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.3"/>
+                    <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+                </radialGradient>
+            </defs>
+            <circle cx="450" cy="180" r="160" fill="url(#aghg)"/>
+            <circle cx="450" cy="180" r="140" stroke="#00e5ff" stroke-width="2" opacity="0.6" fill="none" stroke-dasharray="8 6"/>
+            <g stroke="#00e5ff" stroke-width="1.5" opacity="0.4" fill="none">
+                <line x1="390" y1="130" x2="510" y2="130"/>
+                <line x1="390" y1="230" x2="510" y2="230"/>
+                <line x1="390" y1="130" x2="390" y2="230"/>
+                <line x1="510" y1="130" x2="510" y2="230"/>
+                <line x1="390" y1="130" x2="510" y2="230"/>
+                <line x1="510" y1="130" x2="390" y2="230"/>
+            </g>
+            <g fill="#00e5ff">
+                <circle cx="390" cy="130" r="7"/>
+                <circle cx="510" cy="130" r="7"/>
+                <circle cx="390" cy="230" r="7"/>
+                <circle cx="510" cy="230" r="7"/>
+                <circle cx="450" cy="180" r="10"/>
+            </g>
+            <g stroke="#1a3040" stroke-width="1" opacity="0.6" fill="none">
+                <line x1="80" y1="110" x2="280" y2="150"/>
+                <line x1="80" y1="250" x2="280" y2="210"/>
+                <line x1="820" y1="110" x2="620" y2="150"/>
+                <line x1="820" y1="250" x2="620" y2="210"/>
+            </g>
+            <g fill="#1a3040">
+                <circle cx="80" cy="110" r="5"/>
+                <circle cx="80" cy="250" r="5"/>
+                <circle cx="820" cy="110" r="5"/>
+                <circle cx="820" cy="250" r="5"/>
+            </g>
+            <text x="450" y="345" fill="#00e5ff" opacity="0.6" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="middle">inside the security boundary</text>
+        </svg>
+    </div>
 
     <article class="article-body">
 
@@ -101,10 +138,38 @@
 
         <p>Most AI systems today follow the same pattern. Your data goes up to a cloud provider. A large language model processes it. The answer comes back. You pay per query. Simple, effective, and completely unusable in about half the environments the Department of Defense operates in.</p>
 
-        <figure class="article-image">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=400&fit=crop" alt="Global network visualization showing connected data points">
-            <figcaption>Cloud AI requires constant connectivity. Many government environments have none.</figcaption>
-        </figure>
+        <div class="svg-divider" role="img" aria-label="Disconnected cluster: nodes unable to reach a remote cloud">
+            <svg viewBox="0 0 700 140" xmlns="http://www.w3.org/2000/svg">
+                <g stroke="#00e5ff" stroke-width="1.5" opacity="0.45" fill="none">
+                    <line x1="130" y1="70" x2="200" y2="40"/>
+                    <line x1="130" y1="70" x2="200" y2="100"/>
+                    <line x1="200" y1="40" x2="270" y2="70"/>
+                    <line x1="200" y1="100" x2="270" y2="70"/>
+                </g>
+                <g fill="#00e5ff">
+                    <circle cx="130" cy="70" r="5"/>
+                    <circle cx="200" cy="40" r="4"/>
+                    <circle cx="200" cy="100" r="4"/>
+                    <circle cx="270" cy="70" r="5"/>
+                </g>
+                <g stroke="#1a3040" stroke-width="1" opacity="0.5" fill="none" stroke-dasharray="4 4">
+                    <line x1="310" y1="70" x2="440" y2="70"/>
+                </g>
+                <g stroke="#1a3040" stroke-width="2" opacity="0.7" fill="none">
+                    <line x1="365" y1="55" x2="385" y2="85"/>
+                    <line x1="385" y1="55" x2="365" y2="85"/>
+                </g>
+                <g stroke="#1a3040" stroke-width="1" opacity="0.5" fill="none">
+                    <circle cx="560" cy="70" r="28"/>
+                </g>
+                <g fill="#1a3040">
+                    <circle cx="560" cy="70" r="6"/>
+                </g>
+                <text x="200" y="128" fill="#00e5ff" opacity="0.6" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">local swarm</text>
+                <text x="560" y="128" fill="#1a3040" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">cloud</text>
+            </svg>
+        </div>
+        <p class="svg-caption" style="text-align:center; color:var(--text-secondary); font-size:0.85rem; margin-top:-24px; margin-bottom:32px;">Cloud AI requires constant connectivity. Many government environments have none.</p>
 
         <p>The requirements for getting a cloud AI system authorized on a government network are substantial. You're looking at an Authority to Operate (ATO), IL5 or IL6 cloud authorization, FedRAMP compliance, DISA review, and months of paperwork before a single query runs. For classified networks, multiply that timeline by three.</p>
 
@@ -130,10 +195,40 @@
 
         <p>Cloud AI models give you a different answer every time you ask the same question. That's a feature for creative writing. It's a problem for intelligence analysis, audit findings, and mission planning — environments where reproducibility isn't optional.</p>
 
-        <figure class="article-image">
-            <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800&h=400&fit=crop" alt="Code on a computer screen showing structured logic">
-            <figcaption>Deterministic analysis means the same input produces the same output. Every time. Auditable and reproducible.</figcaption>
-        </figure>
+        <div class="svg-divider" role="img" aria-label="Determinism: identical inputs produce identical outputs">
+            <svg viewBox="0 0 700 140" xmlns="http://www.w3.org/2000/svg">
+                <g stroke="#00e5ff" stroke-width="1.5" opacity="0.5" fill="none">
+                    <circle cx="130" cy="45" r="14"/>
+                    <circle cx="130" cy="95" r="14"/>
+                </g>
+                <g stroke="#00e5ff" stroke-width="1.5" opacity="0.45" fill="none">
+                    <line x1="144" y1="45" x2="300" y2="70"/>
+                    <line x1="144" y1="95" x2="300" y2="70"/>
+                    <line x1="300" y1="70" x2="420" y2="70"/>
+                </g>
+                <g stroke="#00e5ff" stroke-width="1.5" opacity="0.5" fill="none">
+                    <rect x="300" y="50" width="40" height="40" rx="4"/>
+                </g>
+                <g stroke="#00e5ff" stroke-width="1.5" opacity="0.45" fill="none">
+                    <line x1="460" y1="70" x2="560" y2="45"/>
+                    <line x1="460" y1="70" x2="560" y2="95"/>
+                </g>
+                <g stroke="#00e5ff" stroke-width="1.5" opacity="0.5" fill="none">
+                    <circle cx="570" cy="45" r="14"/>
+                    <circle cx="570" cy="95" r="14"/>
+                </g>
+                <g fill="#00e5ff">
+                    <circle cx="130" cy="45" r="4"/>
+                    <circle cx="130" cy="95" r="4"/>
+                    <circle cx="320" cy="70" r="5"/>
+                    <circle cx="570" cy="45" r="4"/>
+                    <circle cx="570" cy="95" r="4"/>
+                </g>
+                <text x="130" y="130" fill="#00e5ff" opacity="0.6" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">same input</text>
+                <text x="570" y="130" fill="#00e5ff" opacity="0.6" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">same output</text>
+            </svg>
+        </div>
+        <p class="svg-caption" style="text-align:center; color:var(--text-secondary); font-size:0.85rem; margin-top:-24px; margin-bottom:32px;">Deterministic analysis means the same input produces the same output. Every time. Auditable and reproducible.</p>
 
         <p>Our system uses graph traversal as its primary reasoning method. When it follows a "Causes" edge from a problem node to a root cause node, that traversal is deterministic — same graph, same query, same answer. The graph structure <em>is</em> the reasoning. There's nothing probabilistic about it.</p>
 
@@ -153,10 +248,27 @@
 
         <p>Let's make this concrete. Say you're an S2 intelligence officer and you need a threat assessment. In a cloud-first system, you'd type your question, wait for it to hit the API, wait for the model to process, wait for the response to come back. If your connection is slow — or if the cloud provider is having a bad day — you wait longer.</p>
 
-        <figure class="article-image">
-            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&h=400&fit=crop" alt="Digital interface showing data analysis and security monitoring">
-            <figcaption>Local analysis means results in milliseconds, not seconds. The difference matters when decisions are time-critical.</figcaption>
-        </figure>
+        <div class="svg-divider" role="img" aria-label="Latency comparison: milliseconds local versus seconds cloud">
+            <svg viewBox="0 0 700 140" xmlns="http://www.w3.org/2000/svg">
+                <g stroke="#00e5ff" stroke-width="2.5" opacity="0.9" fill="none">
+                    <line x1="100" y1="45" x2="170" y2="45"/>
+                </g>
+                <g fill="#00e5ff">
+                    <circle cx="100" cy="45" r="5"/>
+                    <circle cx="170" cy="45" r="5"/>
+                </g>
+                <g stroke="#1a3040" stroke-width="2" opacity="0.7" fill="none">
+                    <line x1="100" y1="100" x2="600" y2="100"/>
+                </g>
+                <g fill="#1a3040">
+                    <circle cx="100" cy="100" r="5"/>
+                    <circle cx="600" cy="100" r="5"/>
+                </g>
+                <text x="135" y="30" fill="#00e5ff" opacity="0.8" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle">25 ms local</text>
+                <text x="350" y="125" fill="#1a3040" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle">2,500 ms cloud round-trip</text>
+            </svg>
+        </div>
+        <p class="svg-caption" style="text-align:center; color:var(--text-secondary); font-size:0.85rem; margin-top:-24px; margin-bottom:32px;">Local analysis means results in milliseconds, not seconds. The difference matters when decisions are time-critical.</p>
 
         <p>In our system, the knowledge graph is already loaded in memory. The graph-only agents traverse the relevant edges in under 25 milliseconds — that's faster than a single frame of video. The specialized agents that need deeper reasoning take about 10 seconds each on a standard laptop GPU. Total time for a full eight-agent analysis: about 30 seconds. Total cost: zero.</p>
 
