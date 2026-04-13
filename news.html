@@ -88,11 +88,99 @@
 
             <!-- Week Header -->
             <div class="week-header">
+                <h2>Week of April 14, 2026</h2>
+                <span class="week-count">6 items</span>
+            </div>
+
+            <div class="news-feed" id="newsFeed">
+
+                <article class="news-item" data-category="agents">
+                    <div class="news-tag">AGENTS</div>
+                    <div class="news-content">
+                        <h3>Our Neural Swarm Hits 18-of-18 Primitive Coverage</h3>
+                        <p class="news-source">Swarm Labs Research &middot; Apr 13, 2026</p>
+                        <p class="news-summary">Our neural reasoning swarm now covers every one of the eighteen mastered primitives from our symbolic reasoning curriculum — counting, identity, ordering, conjunction, negation, containment, grouping, transitivity, spatial, transform, analogy, and composed reasoning. All deterministic. All running locally. Zero API calls on the primitive path.</p>
+                        <div class="news-take">
+                            <span class="take-label">OUR TAKE</span>
+                            <p>Covering the primitive space is the prerequisite for everything else we want to do. Every complex reasoning task we have encountered — threat analysis, contract audit, compliance check, anomaly correlation — decomposes into sequences of these eighteen operations. With full primitive coverage, the question stops being &quot;can the system reason about this&quot; and becomes &quot;can the router pick the right decomposition.&quot; That is a much more tractable engineering problem, and it is where our work is focused next.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-item" data-category="agents">
+                    <div class="news-tag">RESEARCH</div>
+                    <div class="news-content">
+                        <h3>CONCLAVE Research Chain Maps the 2026–2028 Service Swarm Opportunity</h3>
+                        <p class="news-source">Swarm Labs Research &middot; Apr 13, 2026</p>
+                        <p class="news-summary">Our internal research swarm ran a six-mission chain examining where service-swarm architectures genuinely beat single-LLM, single-human, and traditional-SaaS alternatives for the 2026–2028 window. Findings covered displacement-driven demand gaps, liability moats that hyperscalers cannot cross, new service categories unlocked by sub-cent query economics, and the distribution channels that actually convert for solo technical founders.</p>
+                        <div class="news-take">
+                            <span class="take-label">OUR TAKE</span>
+                            <p>The cleanest result: the next wave of defensible AI services is in places where liability scales superlinearly with user base. That is exactly the shape of professional licensing, regulated compliance, and safety-critical verification — markets where a hyperscaler is structurally barred from playing because their insurance surface is too large. Small, specialized operators with real domain expertise and auditable systems are the natural winners. That is the market we are building for.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-item" data-category="models">
+                    <div class="news-tag">MODELS</div>
+                    <div class="news-content">
+                        <h3>Retrieval-Augmented Generation Grounding Now Live Across Our Local Module Library</h3>
+                        <p class="news-source">Swarm Labs Research &middot; Apr 13, 2026</p>
+                        <p class="news-summary">Every LLM-backed module in our local reasoning stack now pulls the top relevant facts from our curated knowledge graph and injects them into the prompt before inference. The retrieval layer is cached against a 900-node brain graph, runs in milliseconds, and measurably reduces hallucination on factual work.</p>
+                        <div class="news-take">
+                            <span class="take-label">OUR TAKE</span>
+                            <p>RAG is no longer the research-lab trick it was two years ago. For anyone running a local model in production, grounding the prompt in retrieved facts is the single highest-return change you can make to reduce confident-sounding wrong answers. The absolute hallucination drop on factual tasks we have measured is in the fifteen-to-twenty-five percent range, which is the difference between a model that embarrasses you at a demo and one you can hand to an analyst. This should be the default configuration, not an advanced feature.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-item" data-category="defense">
+                    <div class="news-tag">DEFENSE</div>
+                    <div class="news-content">
+                        <h3>The Case for Episodic Memory in Defense AI</h3>
+                        <p class="news-source">Swarm Labs Research &middot; Apr 12, 2026</p>
+                        <p class="news-summary">We wired an episodic memory layer into our local reasoning stack this week. Every task the system handles now records a full episode — inputs, chosen module, outcome, reward — and every subsequent task queries the episode store for similar past successes before running. The result is a system that imitates what worked last time instead of re-deriving from scratch.</p>
+                        <div class="news-take">
+                            <span class="take-label">OUR TAKE</span>
+                            <p>Cloud LLMs have no memory. Every conversation is a blank slate. For intelligence work that is a serious liability: the same analyst asking the same question a week later should not get a different answer, and the system should not be re-learning the same lesson on every call. Episodic memory turns a language model from a clever autocomplete into something closer to a junior analyst who actually gets better at the job. It is a small architectural addition with an outsized effect on the quality of downstream work.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-item" data-category="agents">
+                    <div class="news-tag">AGENTS</div>
+                    <div class="news-content">
+                        <h3>Composition Planner Wired Into Our Local Orchestrator</h3>
+                        <p class="news-source">Swarm Labs Research &middot; Apr 13, 2026</p>
+                        <p class="news-summary">Our local orchestrator can now chain multiple primitive operations into a single compound task. A small local planner emits a JSON execution graph, and the orchestrator walks it step-by-step, passing outputs between stages. This is what turns a library of eighteen single-step primitives into a system that can solve multi-step problems.</p>
+                        <div class="news-take">
+                            <span class="take-label">OUR TAKE</span>
+                            <p>Composition is where primitive-based reasoning stops being a demo and starts being useful. Single operations cover about twenty percent of real tasks; the rest need two or three operations chained in sequence. A tiny local planner that emits an execution DAG is all you need to unlock that — no giant model, no expensive API call, no cloud dependency. The expensive problem was never the reasoning. It was always deciding which reasoning to do, and in what order.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-item" data-category="defense">
+                    <div class="news-tag">DEFENSE</div>
+                    <div class="news-content">
+                        <h3>Air-Gapped Benchmarking: We Shipped An Offline ARC-AGI Regression Runner</h3>
+                        <p class="news-source">Swarm Labs Research &middot; Apr 13, 2026</p>
+                        <p class="news-summary">We now run the ARC-AGI-2 benchmark against our local reasoning orchestrator end-to-end, offline, with escalation disabled. The runner loads one thousand puzzles, renders each as a natural-language task, routes it through our module library, and grades the output grid against ground truth. It produces a reproducible pass-rate number in seconds and costs nothing to execute.</p>
+                        <div class="news-take">
+                            <span class="take-label">OUR TAKE</span>
+                            <p>Running a benchmark offline is not glamorous, but it is the only honest way to measure a local reasoning system. The moment a benchmark involves a cloud API, you are measuring the vendor&apos;s performance, not yours. For defense, where anything that matters has to run in environments without cloud access, offline benchmarking is the only number that is actually predictive of field performance. We are going to be publishing these numbers as we improve the system, the same way you would track any other performance metric.</p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Week Header -->
+            <div class="week-header">
                 <h2>Week of April 7, 2026</h2>
                 <span class="week-count">8 items</span>
             </div>
 
-            <div class="news-feed" id="newsFeed">
+            <div class="news-feed">
 
                 <article class="news-item" data-category="models">
                     <div class="news-tag">MODELS</div>
