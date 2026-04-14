@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+    <defs>
+        <radialGradient id="g" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.3"/>
+            <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0a1220"/>
+            <stop offset="50%" stop-color="#0d1828"/>
+            <stop offset="100%" stop-color="#0a1220"/>
+        </linearGradient>
+    </defs>
+    <rect width="1200" height="630" fill="url(#bg)"/>
+
+    <!-- Outer harness ring -->
+    <circle cx="600" cy="300" r="230" fill="url(#g)"/>
+    <circle cx="600" cy="300" r="230" stroke="#00e5ff" stroke-width="2" opacity="0.55" fill="none" stroke-dasharray="6 6"/>
+
+    <!-- Inner model core -->
+    <circle cx="600" cy="300" r="55" stroke="#00e5ff" stroke-width="2" opacity="0.9" fill="none"/>
+    <circle cx="600" cy="300" r="14" fill="#00e5ff"/>
+    <text x="600" y="380" fill="#00e5ff" opacity="0.75" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="500" text-anchor="middle" letter-spacing="2">MODEL</text>
+
+    <!-- Six harness component nodes around the ring -->
+    <g stroke="#00e5ff" stroke-width="1.5" opacity="0.45" fill="none">
+        <line x1="600" y1="300" x2="600" y2="70"/>
+        <line x1="600" y1="300" x2="799" y2="185"/>
+        <line x1="600" y1="300" x2="799" y2="415"/>
+        <line x1="600" y1="300" x2="600" y2="530"/>
+        <line x1="600" y1="300" x2="401" y2="415"/>
+        <line x1="600" y1="300" x2="401" y2="185"/>
+    </g>
+    <g fill="#00e5ff">
+        <circle cx="600" cy="70"  r="9"/>
+        <circle cx="799" cy="185" r="9"/>
+        <circle cx="799" cy="415" r="9"/>
+        <circle cx="600" cy="530" r="9"/>
+        <circle cx="401" cy="415" r="9"/>
+        <circle cx="401" cy="185" r="9"/>
+    </g>
+
+    <!-- Labels for each harness component -->
+    <g fill="#00e5ff" opacity="0.88" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="500" text-anchor="middle" letter-spacing="1">
+        <text x="600" y="45">MEMORY</text>
+        <text x="835" y="165">TOOL USE</text>
+        <text x="835" y="445">VERIFICATION</text>
+        <text x="600" y="565">ROUTING</text>
+        <text x="365" y="445">RECOVERY</text>
+        <text x="365" y="165">PLANNING</text>
+    </g>
+
+    <!-- Subtle outer signal nodes (noise / world) -->
+    <g stroke="#1a3040" stroke-width="1" opacity="0.55" fill="none">
+        <line x1="80" y1="100"  x2="340" y2="200"/>
+        <line x1="80" y1="500"  x2="340" y2="400"/>
+        <line x1="1120" y1="100" x2="860" y2="200"/>
+        <line x1="1120" y1="500" x2="860" y2="400"/>
+    </g>
+    <g fill="#1a3040">
+        <circle cx="80" cy="100" r="5"/>
+        <circle cx="80" cy="500" r="5"/>
+        <circle cx="1120" cy="100" r="5"/>
+        <circle cx="1120" cy="500" r="5"/>
+    </g>
+
+    <text x="600" y="610" fill="#00e5ff" opacity="0.85" font-family="Inter, sans-serif" font-size="22" font-weight="600" text-anchor="middle" letter-spacing="4">SWARM LABS USA</text>
+</svg>
