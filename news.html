@@ -89,10 +89,23 @@
             <!-- Week Header -->
             <div class="week-header">
                 <h2>Week of April 14, 2026</h2>
-                <span class="week-count">6 items</span>
+                <span class="week-count">7 items</span>
             </div>
 
             <div class="news-feed" id="newsFeed">
+
+                <article class="news-item" data-category="defense">
+                    <div class="news-tag">DEFENSE</div>
+                    <div class="news-content">
+                        <h3>AI Coding Assistants Are Accelerating the Post-Quantum Migration Clock</h3>
+                        <p class="news-source">CNSA 2.0 / NSM-10 / NIST SP 800-208 &middot; Apr 17, 2026</p>
+                        <p class="news-summary">Federal policy has already set the deadline: CNSA 2.0 and NSM-10 require federal systems to deprecate classical asymmetric cryptography starting 2030 and complete migration to NIST-standardized post-quantum algorithms (ML-KEM, ML-DSA, SLH-DSA) by 2035. What has changed in the last 18 months is the rate at which new quantum-vulnerable code is being created. AI coding assistants &mdash; Copilot, Cursor, and the in-IDE assistants from every major vendor &mdash; are now producing a majority of the cryptographic call sites that ship to production, and they default to the patterns in their training data: RSA-2048 key generation, ECDSA over P-256, finite-field Diffie-Hellman. Every one of those is quantum-vulnerable, and every one of them is going to appear in a cryptographic inventory that an inspector general will eventually audit.</p>
+                        <div class="news-take">
+                            <span class="take-label">OUR TAKE</span>
+                            <p>This is the governance story nobody is telling yet. The PQC migration deadline didn't move &mdash; the exposure growth rate did. Enterprises are generating more quantum-vulnerable cryptographic code per month than standards bodies produced per decade, and the traditional approach to cryptographic inventory (engineers, spreadsheets, consulting engagements) doesn't scale to a codebase where the AI adds new call sites every day. The right response is the same one we've been arguing on every other audit-grade AI problem: machine-readable inventory, reproducible scans, signed evidence. We shipped an internal tool this week that scans a Python codebase, produces a claim graph of every vulnerable call with its NIST classification and recommended post-quantum replacement, and emits a LYCEUM-compatible replay manifest &mdash; same schema as our other audit-ready systems, SHA256-hashed end-to-end, Ed25519-signed by our signing service. An auditor re-runs the command, gets byte-identical hashes, and accepts the evidence without re-doing the work. We're opening conversations with a small number of design partners in defense and critical infrastructure now. <a href="/blog/post-quantum-when-ai-writes-the-crypto.html">Read the full piece</a>.</p>
+                        </div>
+                    </div>
+                </article>
 
                 <article class="news-item" data-category="agents">
                     <div class="news-tag">AGENTS</div>

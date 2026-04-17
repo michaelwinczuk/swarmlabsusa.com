@@ -75,6 +75,66 @@
     <section class="section">
         <div class="container">
             <div class="blog-grid">
+                <a href="blog/post-quantum-when-ai-writes-the-crypto.html" class="blog-card">
+                    <div class="blog-card-image" style="background:linear-gradient(135deg,#041824 0%,#072538 55%,#00202f 100%);display:flex;align-items:center;justify-content:center;">
+                        <svg viewBox="0 0 320 160" xmlns="http://www.w3.org/2000/svg" style="width:88%;height:auto;">
+                            <rect x="14" y="20" width="130" height="120" rx="4" fill="none" stroke="#ff5577" stroke-width="1" opacity="0.85"/>
+                            <text x="24" y="42" fill="#ffb3c1" font-family="JetBrains Mono,monospace" font-size="8" opacity="0.8">VULNERABLE</text>
+                            <text x="24" y="60" fill="#ffe6ec" font-family="JetBrains Mono,monospace" font-size="9">rsa.generate(2048)</text>
+                            <text x="24" y="86" fill="#ffb3c1" font-family="JetBrains Mono,monospace" font-size="8" opacity="0.8">THREAT</text>
+                            <text x="24" y="104" fill="#ffe6ec" font-family="JetBrains Mono,monospace" font-size="9">Shor + harvest</text>
+                            <text x="24" y="120" fill="#ffe6ec" font-family="JetBrains Mono,monospace" font-size="9">CNSA 2.0 / NSM-10</text>
+                            <line x1="150" y1="80" x2="180" y2="80" stroke="#00e5ff" stroke-width="1.5"/>
+                            <polygon points="180,76 188,80 180,84" fill="#00e5ff"/>
+                            <rect x="190" y="20" width="115" height="120" rx="4" fill="none" stroke="#00e5ff" stroke-width="1" opacity="0.85"/>
+                            <text x="200" y="42" fill="#7edfff" font-family="JetBrains Mono,monospace" font-size="8" opacity="0.75">PQC EVIDENCE</text>
+                            <text x="200" y="60" fill="#e6faff" font-family="JetBrains Mono,monospace" font-size="9">rule: PY-RSA-001</text>
+                            <text x="200" y="78" fill="#e6faff" font-family="JetBrains Mono,monospace" font-size="9">&rarr; ML-KEM-1024</text>
+                            <text x="200" y="96" fill="#e6faff" font-family="JetBrains Mono,monospace" font-size="9">hash: eaa1&hellip;15b3</text>
+                            <text x="200" y="114" fill="#e6faff" font-family="JetBrains Mono,monospace" font-size="9">signed &#10003;</text>
+                        </svg>
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-card-tag">CRYPTOGRAPHY</span>
+                        <h2>When AI Writes the Crypto, Post-Quantum Becomes Non-Negotiable</h2>
+                        <p>AI coding assistants are generating quantum-vulnerable cryptographic code at unprecedented scale, and federal PQC deadlines leave no room for manual audit. Here's what the evidence has to look like — and why it has to be signed.</p>
+                        <div class="blog-card-meta">
+                            <span>April 17, 2026</span>
+                            <span>10 min read</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="blog/audit-ready-ai.html" class="blog-card">
+                    <div class="blog-card-image" style="background:linear-gradient(135deg,#041824 0%,#072538 55%,#00202f 100%);display:flex;align-items:center;justify-content:center;">
+                        <svg viewBox="0 0 320 160" xmlns="http://www.w3.org/2000/svg" style="width:88%;height:auto;">
+                            <rect x="14" y="20" width="130" height="120" rx="4" fill="none" stroke="#00e5ff" stroke-width="1" opacity="0.85"/>
+                            <text x="24" y="42" fill="#7edfff" font-family="JetBrains Mono,monospace" font-size="8" opacity="0.75">QUERY</text>
+                            <text x="24" y="60" fill="#e6faff" font-family="JetBrains Mono,monospace" font-size="9">threat(BRIDGE-7)</text>
+                            <text x="24" y="86" fill="#7edfff" font-family="JetBrains Mono,monospace" font-size="8" opacity="0.75">TRAVERSAL</text>
+                            <text x="24" y="104" fill="#e6faff" font-family="JetBrains Mono,monospace" font-size="9">&rarr; ROUTE-A</text>
+                            <text x="24" y="120" fill="#e6faff" font-family="JetBrains Mono,monospace" font-size="9">&rarr; PRIORITY</text>
+                            <line x1="150" y1="80" x2="180" y2="80" stroke="#00e5ff" stroke-width="1.5"/>
+                            <polygon points="180,76 188,80 180,84" fill="#00e5ff"/>
+                            <rect x="190" y="20" width="115" height="120" rx="4" fill="none" stroke="#00e5ff" stroke-width="1" opacity="0.85"/>
+                            <text x="200" y="42" fill="#7edfff" font-family="JetBrains Mono,monospace" font-size="8" opacity="0.75">AUDIT</text>
+                            <text x="200" y="60" fill="#e6faff" font-family="JetBrains Mono,monospace" font-size="9">hash: a5f1&hellip;c7</text>
+                            <text x="200" y="78" fill="#e6faff" font-family="JetBrains Mono,monospace" font-size="9">graph: v12.3</text>
+                            <text x="200" y="96" fill="#e6faff" font-family="JetBrains Mono,monospace" font-size="9">nodes: 4</text>
+                            <text x="200" y="114" fill="#e6faff" font-family="JetBrains Mono,monospace" font-size="9">24ms &#10003;</text>
+                        </svg>
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-card-tag">GOVERNANCE</span>
+                        <h2>Audit-Ready AI: Why Every Answer Needs a Paper Trail</h2>
+                        <p>NIST and the Department of War both want AI that can show its work. But audit-readiness is an architecture decision, not a compliance checkbox — and the systems that weren't designed for it can't be retrofitted into it.</p>
+                        <div class="blog-card-meta">
+                            <span>April 15, 2026</span>
+                            <span>9 min read</span>
+                        </div>
+                    </div>
+                </a>
+
                 <a href="blog/why-harnesses-are-the-real-lever-for-small-models.html" class="blog-card">
                     <div class="blog-card-image">
                         <img src="og/harnesses.svg" alt="A model core surrounded by a harness ring of memory, tool use, verification, routing, recovery, and planning nodes" loading="lazy">

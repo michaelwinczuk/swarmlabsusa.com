@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>When AI Writes the Crypto, Post-Quantum Becomes Non-Negotiable — Swarm Labs USA</title>
+    <meta name="description" content="AI coding assistants are generating more cryptographic code per week than human teams produced in a year — and most of it inherits the quantum-vulnerable patterns in the training data. Here's why post-quantum migration is already a governance problem, and what machine-checkable evidence has to look like when a regulator asks for proof.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://swarmlabsusa.com/blog/post-quantum-when-ai-writes-the-crypto.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="When AI Writes the Crypto, Post-Quantum Becomes Non-Negotiable">
+    <meta property="og:description" content="AI is generating quantum-vulnerable cryptographic code at unprecedented scale. Here's what the audit evidence has to look like — and why it has to be signed.">
+    <meta property="og:url" content="https://swarmlabsusa.com/blog/post-quantum-when-ai-writes-the-crypto.html">
+    <meta property="article:published_time" content="2026-04-17">
+    <meta property="article:author" content="Swarm Labs USA">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "When AI Writes the Crypto, Post-Quantum Becomes Non-Negotiable",
+        "description": "AI coding assistants are generating quantum-vulnerable cryptographic code at unprecedented scale, and federal PQC deadlines leave no room for manual audit. Here's what the evidence has to look like.",
+        "datePublished": "2026-04-17",
+        "author": {"@type": "Organization", "name": "Swarm Labs USA"},
+        "publisher": {"@type": "Organization", "name": "Swarm Labs USA"},
+        "url": "https://swarmlabsusa.com/blog/post-quantum-when-ai-writes-the-crypto.html",
+        "keywords": ["post-quantum cryptography", "PQC migration", "CNSA 2.0", "NSM-10", "NIST SP 800-208", "ML-KEM", "ML-DSA", "audit-ready AI", "cryptographic inventory", "CBOM"]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../blog.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="3" fill="#00e5ff"/>
+                    <circle cx="16" cy="6" r="2" fill="#00e5ff" opacity="0.8"/>
+                    <circle cx="16" cy="26" r="2" fill="#00e5ff" opacity="0.8"/>
+                    <circle cx="6" cy="11" r="2" fill="#00e5ff" opacity="0.8"/>
+                    <circle cx="26" cy="11" r="2" fill="#00e5ff" opacity="0.8"/>
+                    <circle cx="6" cy="21" r="2" fill="#00e5ff" opacity="0.8"/>
+                    <circle cx="26" cy="21" r="2" fill="#00e5ff" opacity="0.8"/>
+                    <line x1="16" y1="13" x2="16" y2="8" stroke="#00e5ff" stroke-width="0.8" opacity="0.5"/>
+                    <line x1="16" y1="19" x2="16" y2="24" stroke="#00e5ff" stroke-width="0.8" opacity="0.5"/>
+                    <line x1="13.5" y1="14.5" x2="7.5" y2="12" stroke="#00e5ff" stroke-width="0.8" opacity="0.5"/>
+                    <line x1="18.5" y1="14.5" x2="24.5" y2="12" stroke="#00e5ff" stroke-width="0.8" opacity="0.5"/>
+                    <line x1="13.5" y1="17.5" x2="7.5" y2="20" stroke="#00e5ff" stroke-width="0.8" opacity="0.5"/>
+                    <line x1="18.5" y1="17.5" x2="24.5" y2="20" stroke="#00e5ff" stroke-width="0.8" opacity="0.5"/>
+                </svg>
+                <span>SWARM LABS USA</span>
+            </a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/news.html">Intel Brief</a>
+                <a href="/#contact" class="nav-cta">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <a href="/blog.html" class="article-back">&larr; Back to Blog</a>
+    </div>
+
+    <header class="article-header">
+        <span class="section-tag">CRYPTOGRAPHY</span>
+        <h1>When AI Writes the Crypto, Post-Quantum Becomes Non-Negotiable</h1>
+        <div class="article-meta">
+            <span>April 17, 2026</span>
+            <span>10 min read</span>
+        </div>
+    </header>
+
+    <figure class="article-hero-image" style="background:linear-gradient(135deg,#041824 0%,#072538 55%,#00202f 100%);height:360px;display:flex;align-items:center;justify-content:center;border-top:1px solid rgba(0,229,255,0.15);border-bottom:1px solid rgba(0,229,255,0.15);">
+        <svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" style="width:min(92%,820px);height:auto;">
+            <defs>
+                <linearGradient id="flow" x1="0" x2="1">
+                    <stop offset="0" stop-color="#00e5ff" stop-opacity="0.0"/>
+                    <stop offset="0.5" stop-color="#00e5ff" stop-opacity="0.9"/>
+                    <stop offset="1" stop-color="#00e5ff" stop-opacity="0.0"/>
+                </linearGradient>
+            </defs>
+
+            <rect x="40" y="40" width="260" height="220" rx="6" fill="none" stroke="#ff5577" stroke-width="1.2" opacity="0.85"/>
+            <text x="60" y="72" fill="#ffb3c1" font-family="JetBrains Mono,monospace" font-size="12" opacity="0.8">VULNERABLE</text>
+            <text x="60" y="100" fill="#ffe6ec" font-family="JetBrains Mono,monospace" font-size="14">rsa.generate_private_key(</text>
+            <text x="80" y="120" fill="#ffe6ec" font-family="JetBrains Mono,monospace" font-size="14">key_size=2048)</text>
+            <text x="60" y="166" fill="#ffb3c1" font-family="JetBrains Mono,monospace" font-size="12" opacity="0.8">THREAT MODEL</text>
+            <text x="60" y="190" fill="#ffe6ec" font-family="JetBrains Mono,monospace" font-size="13">Shor's algorithm</text>
+            <text x="60" y="210" fill="#ffe6ec" font-family="JetBrains Mono,monospace" font-size="13">harvest-now-</text>
+            <text x="60" y="230" fill="#ffe6ec" font-family="JetBrains Mono,monospace" font-size="13">decrypt-later</text>
+            <text x="60" y="250" fill="#ffb3c1" font-family="JetBrains Mono,monospace" font-size="12" opacity="0.8">CNSA 2.0: deprecate</text>
+
+            <line x1="300" y1="150" x2="420" y2="150" stroke="url(#flow)" stroke-width="2"/>
+            <polygon points="420,144 432,150 420,156" fill="#00e5ff"/>
+
+            <rect x="440" y="40" width="240" height="220" rx="6" fill="none" stroke="#00e5ff" stroke-width="1.2" opacity="0.85"/>
+            <text x="460" y="72" fill="#7edfff" font-family="JetBrains Mono,monospace" font-size="12" opacity="0.8">AUDIT EVIDENCE</text>
+            <text x="460" y="96" fill="#e6faff" font-family="JetBrains Mono,monospace" font-size="13">mission: fe79&hellip;25fa</text>
+            <text x="460" y="116" fill="#e6faff" font-family="JetBrains Mono,monospace" font-size="13">snapshot: 4f01&hellip;37</text>
+            <text x="460" y="136" fill="#e6faff" font-family="JetBrains Mono,monospace" font-size="13">rule: PY-RSA-001</text>
+            <text x="460" y="156" fill="#e6faff" font-family="JetBrains Mono,monospace" font-size="13">replace: ML-KEM-1024</text>
+            <text x="460" y="176" fill="#e6faff" font-family="JetBrains Mono,monospace" font-size="13">signed: ed25519</text>
+            <text x="460" y="196" fill="#e6faff" font-family="JetBrains Mono,monospace" font-size="13">sha256: eaa1&hellip;15b3</text>
+            <text x="460" y="216" fill="#e6faff" font-family="JetBrains Mono,monospace" font-size="13">verify: PASS</text>
+            <text x="460" y="240" fill="#7edfff" font-family="JetBrains Mono,monospace" font-size="12" opacity="0.8">reproducible &#10003;</text>
+
+            <circle cx="170" cy="285" r="3" fill="#ff5577" opacity="0.6"/>
+            <circle cx="360" cy="285" r="3" fill="#00e5ff" opacity="0.8"/>
+            <circle cx="560" cy="285" r="3" fill="#00e5ff" opacity="0.6"/>
+        </svg>
+    </figure>
+
+    <article class="article-body">
+
+        <p>There is a quiet change happening in almost every codebase in America. Developers are still writing code, but they are no longer typing most of it. AI coding assistants — Copilot, Cursor, the built-in assistants in every major IDE — are now producing a large share of the cryptographic code that ships to production. Key generation, signature verification, TLS configuration, token signing: all of it, written at AI speed, merged at AI speed.</p>
+
+        <p>That's a productivity story. It's also a cryptographic inventory story. Because the patterns the AI picks up are the patterns in its training data, and the training data was overwhelmingly written before post-quantum cryptography was standardized. The default suggestion for "generate an RSA key" is still <code>rsa.generate_private_key(key_size=2048)</code>. The default suggestion for "sign this message" is still ECDSA over P-256. Every one of those calls is quantum-vulnerable, every one of them is being generated at unprecedented scale, and every one of them is going to show up on a federal inspector general's desk sometime in the next five years.</p>
+
+        <blockquote>
+            <p>We are generating more quantum-vulnerable cryptographic code in one year than the entire industry produced in the decade before AI assistants existed.</p>
+        </blockquote>
+
+        <p>This is not a future problem. It's a present exposure that compounds daily.</p>
+
+        <h2>The Timeline Has Moved</h2>
+
+        <p>Three things are happening at once, and together they shorten the window every organization has to get its cryptographic house in order.</p>
+
+        <p><strong>Shor's algorithm is real, and the engineering is catching up.</strong> A cryptographically relevant quantum computer — the kind that breaks RSA-2048 or ECDSA over P-256 — doesn't exist yet. But NIST's standards office doesn't plan around "doesn't exist yet." It plans around the Commercial National Security Algorithm Suite 2.0 and National Security Memorandum 10, which mandate that federal systems deprecate classical asymmetric cryptography starting 2030 and complete migration by 2035. The Department of War's own timeline is tighter than that for weapon systems.</p>
+
+        <p><strong>Harvest-now, decrypt-later is not hypothetical.</strong> Every piece of RSA-protected traffic captured today can be stored and decrypted when a cryptographically relevant quantum computer arrives. Intelligence services with patience and storage budgets are making exactly that bet. For anything that needs to stay confidential past 2035 — long-lived secrets, diplomatic cables, intellectual property, medical records — the migration deadline isn't 2035. It's today.</p>
+
+        <p><strong>The code exposure is growing faster than anyone is migrating it.</strong> We pulled 30 days of Python commits across a representative sample of open-source repositories. Net RSA key-generation call sites grew. Net ECDSA usage grew. Net adoption of ML-KEM or ML-DSA: measurable only in single-digit projects. The stock of vulnerable code is not shrinking. It is expanding, and AI assistants are the reason.</p>
+
+        <h2>Why Manual Cryptographic Audit Does Not Scale</h2>
+
+        <p>The traditional approach to cryptographic inventory is a consulting engagement. Engineers walk the codebase, fill in a spreadsheet, flag the vulnerable calls, propose replacements, and hand the spreadsheet to a compliance team. That approach worked when a large enterprise had a few hundred cryptographic call sites. It does not work when AI assistants are adding new ones every day.</p>
+
+        <p>The time for a human auditor to review a single call site — look at the function, understand how the returned key is used downstream, determine whether it's being used for signing or key exchange, choose the right post-quantum replacement — is on the order of five to ten minutes. A mid-sized enterprise codebase has tens of thousands of call sites. The math does not work, and the math gets worse every week the AI writes more code.</p>
+
+        <p>The only approach that survives this is machine-readable inventory, machine-checkable evidence, and a signed paper trail a regulator can verify without re-doing the work.</p>
+
+        <h2>What Audit-Grade Evidence Actually Looks Like</h2>
+
+        <p>We've spent the last two weeks building out exactly this pipeline, and the part of it that matters is not the scanner. Scanners are easy. What's hard — and what the PQC migration actually requires — is producing evidence that a federal auditor will accept.</p>
+
+        <p>When our tooling scans a codebase, the output is not a PDF. It's a bundle:</p>
+
+        <ul>
+            <li>A <strong>claim graph</strong>. One claim per vulnerable call, each one stating: file and line, algorithm detected, NIST classification, the specific rule that matched, the pqsecurity knowledge-graph nodes that justify the classification, and the recommended post-quantum replacement.</li>
+            <li>A <strong>support path ledger</strong>. For every claim, a four-hop reasoning chain from the vulnerable source line, through the knowledge-graph node, through the governing standard (NIST SP 800-208, CNSA 2.0), to the replacement algorithm. Each hop has a reference an auditor can click.</li>
+            <li>A <strong>gap ledger</strong>. Findings where the migration is not a one-line fix — where the return value of the call flows into <code>.sign()</code> or <code>.decrypt()</code> and the replacement choice depends on what the downstream code does. These are flagged for human review, not buried.</li>
+            <li>A <strong>chalkboard trace</strong>. A log of every step the scanner took: files visited, rules matched, claims emitted. Conformant to the same event schema our other audit-grade systems use.</li>
+            <li>A <strong>replay manifest</strong>. The artifact that anchors the bundle. A SHA256 hash of every other file, plus the versions of the scanner, the rule set, and the knowledge graph. Given the same code and the same rules, running the scanner again produces <em>byte-identical</em> hashes.</li>
+        </ul>
+
+        <p>And then the manifest is signed. Not hand-waved. A detached Ed25519 signature from our signing service, bound to our trust store, which an auditor can independently verify with a standalone tool that never contacts our servers. If the signature verifies and the hashes verify, the evidence holds. If anything in the bundle has been tampered with — a single byte in the dossier, a single line in the claim graph — the verifier says so, and tells you exactly which file and what the hashes were.</p>
+
+        <p>That's the audit trail we think regulated industries are going to need. An LLM cannot produce this. A scanner that outputs a PDF cannot produce this. It has to be designed in.</p>
+
+        <h2>Why AI Makes This Harder — and Also Possible</h2>
+
+        <p>AI is what got us into this compounding exposure. AI is also the only thing that scales the response.</p>
+
+        <p>The exposure comes from code generation. The response comes from the same underlying capability turned inward: parse every call site in a repository, classify each against a deterministic rule set, pull the right replacement from a knowledge graph, and emit machine-readable evidence. No free-text "here's what I think is wrong." Specific rules, specific citations, reproducible output.</p>
+
+        <p>The reason we can run this fast is the same reason our audit-readiness architecture works for other governance use cases. The reasoning layer is a graph, not a model. The rules are typed nodes. The output is a structured artifact, not a paragraph. When we said "AI systems built to pass an audit" three weeks ago, we were talking about this exact shape of system.</p>
+
+        <h2>What This Means If You're Responsible for a Codebase Today</h2>
+
+        <p>If your organization operates in a regulated environment — defense, critical infrastructure, financial services, healthcare — and your codebase uses AI-assisted development, three things are probably true:</p>
+
+        <ol>
+            <li>Your cryptographic inventory is larger than it was a year ago, and nobody has a current count.</li>
+            <li>Your cryptographic inventory is mostly quantum-vulnerable, because that's what the AI assistants have been suggesting.</li>
+            <li>The deadline to migrate it is tighter than your existing compliance calendar assumes, because CNSA 2.0 and NSM-10 are already in effect.</li>
+        </ol>
+
+        <p>The right first action is not a consulting engagement. It's a scan. A machine-readable one, with a signed manifest, run against the HEAD of your repository, repeated against every pull request. That's how you catch the new exposure your own team is generating, and how you have something to hand a regulator when they ask — in machine-checkable form — what state your cryptographic inventory is in.</p>
+
+        <h2>The Takeaway</h2>
+
+        <p>Post-quantum cryptography stopped being a 2035 problem the day the AI coding assistants shipped at scale. The timeline hasn't moved because of quantum computers. It's moved because the rate at which we are creating new exposure went up by an order of magnitude, and the tools for finding and documenting that exposure didn't keep pace.</p>
+
+        <p>The organizations that will be ready are the ones that build cryptographic inventory into their engineering loop the same way they built unit tests — continuously, with signed evidence, and with a replay record an auditor can verify. The organizations that won't be ready are the ones still thinking of PQC as a project, not an architecture property.</p>
+
+        <p>We know which side we're on. We built the tool.</p>
+
+        <div class="article-cta">
+            <h3>Running AI-assisted development in a regulated environment?</h3>
+            <p>We're talking to design partners about the PQC scanner and signing service. If you're a program manager, CISO, or compliance lead who has to explain your cryptographic inventory to someone who reports to Congress, we're happy to run a scan against a representative repository and walk you through the manifest.</p>
+            <a href="/#contact" class="btn btn-primary">Start a Conversation</a>
+        </div>
+
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">SWARM LABS USA</span>
+                    <p>AI Systems Built to Pass an Audit.</p>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2026 Swarm Labs USA. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
